@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlg-Mh-IPW">
+                                <rect key="frame" x="252" y="70" width="96" height="30"/>
+                                <state key="normal" title="Say hello">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sayhello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rot-N5-lO8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-Cu-0rU">
+                                <rect key="frame" x="13" y="191" width="574" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="0iM-9X-iJb"/>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="11k-YJ-Lvj"/>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="C1C-PF-RS4"/>
+                            <constraint firstAttribute="centerX" secondItem="ZbZ-Cu-0rU" secondAttribute="centerX" id="G7I-oH-9RQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Cu-0rU" secondAttribute="trailing" id="HC3-ri-lAb"/>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="151" id="XNo-sR-lsa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Cu-0rU" secondAttribute="trailing" constant="6" id="YB3-hO-Vpz"/>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="adF-Zu-hWk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Cu-0rU" secondAttribute="trailing" constant="136" id="fRc-Sv-EBW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Cu-0rU" secondAttribute="trailing" id="iPs-ew-D6h"/>
+                            <constraint firstAttribute="centerX" secondItem="Hlg-Mh-IPW" secondAttribute="centerX" id="pgw-22-xkr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Cu-0rU" secondAttribute="trailing" id="rfS-bB-EZ2"/>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t1V-n3-SfW"/>
+                            <constraint firstAttribute="centerX" secondItem="ZbZ-Cu-0rU" secondAttribute="centerX" id="ufy-5V-K8Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Cu-0rU" secondAttribute="trailing" id="v0z-iv-UGO"/>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vaT-Ik-M0r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Cu-0rU" secondAttribute="trailing" constant="-3" id="wIl-jL-VQp"/>
+                            <constraint firstAttribute="centerX" secondItem="Hlg-Mh-IPW" secondAttribute="centerX" id="wXI-o9-3EV"/>
+                            <constraint firstItem="ZbZ-Cu-0rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yFK-fB-3AJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textfield" destination="ZbZ-Cu-0rU" id="f6H-08-zy1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
