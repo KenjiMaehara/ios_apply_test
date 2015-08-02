@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var background: UIView!
+    
     @IBOutlet weak var textfield: UITextField!
     
     @IBAction func sayhello(sender: AnyObject) {
         textfield.text = "Hello world!"
+        background.backgroundColor = UIColor.redColor()
+        
     }
     
     override func viewDidLoad() {
@@ -25,6 +29,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 
 }
