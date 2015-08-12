@@ -415,6 +415,7 @@
 				68ED5DF01B5CCBDC0064E1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68ED5DF11B5CCBDC0064E1C7 /* Build configuration list for PBXNativeTarget "HelloSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				68ED5DF31B5CCBDC0064E1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

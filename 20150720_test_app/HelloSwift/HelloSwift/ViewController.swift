@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textfield: UITextField!
     
+    @IBAction func driver_door_unlock(sender: AnyObject) {
+        background.backgroundColor = UIColor.blueColor()
+        
+        
+    }
+    
+    
+    
     @IBAction func sayhello(sender: AnyObject) {
         textfield.text = "Hello world!"
         background.backgroundColor = UIColor.redColor()
