@@ -15,9 +15,12 @@ class ViewController: UIViewController {
     
     @IBAction func play(sender: AnyObject) {
         
-         player.play()
+        player.play()
+        //player.currentTime = 10
         
     }
+    
+    
     
     @IBAction func pause(sender: AnyObject) {
         
