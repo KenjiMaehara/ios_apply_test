@@ -9,21 +9,21 @@
 import UIKit
 //import Cocoa
 
-class ViewController: UIViewController {
+class UserAreaViewController: UIViewController {
 
     //let dateLabel = UILabel()  // 日時表示ラベル
     
     
     
-    //@IBOutlet weak var tokeiLabel: UILabel!
+    @IBOutlet weak var tokeiLabel: UILabel!
     
     
     // 日時フォーマット
-    //var dateFormatter: NSDateFormatter{
-        //let formatter = NSDateFormatter()
-        //formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-        //return formatter
-    //}
+    var dateFormatter: NSDateFormatter{
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        return formatter
+    }
     
     
     
@@ -45,11 +45,11 @@ class ViewController: UIViewController {
         //view.addSubview(tokeiLabel)
         
         // 初回
-        //updateDateLabel()
+        updateDateLabel()
         
         
         // 一定間隔で実行
-        //NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateDateLabel", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateDateLabel", userInfo: nil, repeats: true)
         
     
     }
@@ -63,24 +63,24 @@ class ViewController: UIViewController {
     
     
     
-    //var j=0
+    var j=0
     
     // 日時表示ラベル更新メソッド
-    //func updateDateLabel(){
+    func updateDateLabel(){
         
         //j++
         
         
         
-        //let now = NSDate()
+        let now = NSDate()
         //dateLabel.text = dateFormatter.stringFromDate(now)
-        //tokeiLabel.text = dateFormatter.stringFromDate(now)
+        tokeiLabel.text = dateFormatter.stringFromDate(now)
         
         //self.tokeiLabel.text = dateFormatter.stringFromDate(now)
  
         
  
-    //}
+    }
  
     
     

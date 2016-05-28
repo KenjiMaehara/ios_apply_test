@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HelloSwift.xcscheme</key>
+		<key>Twitter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>68ED5DCE1B5CCBDC0064E1C7</key>
+		<key>2AE702D91C291CA10074F3C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68ED5DE31B5CCBDC0064E1C7</key>
+		<key>2AE702ED1C291CA10074F3C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2AE702F81C291CA10074F3C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

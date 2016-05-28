@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -58,7 +58,7 @@
         <!--tenkeyView-->
         <scene sceneID="VsB-QN-XT7">
             <objects>
-                <viewController title="tenkeyView" id="bBr-ba-aQ7" customClass="ViewController" customModule="proxyView20160510" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="tenkeyView" id="bBr-ba-aQ7" customClass="TenkeyViewController" customModule="proxyView20160510" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ay7-31-oQm"/>
                         <viewControllerLayoutGuide type="bottom" id="Jcn-gn-XyY"/>
@@ -342,7 +342,7 @@
         <!--userAreaView-->
         <scene sceneID="PhX-mB-am4">
             <objects>
-                <viewController title="userAreaView" id="q17-Rp-4z7" customClass="ViewController" customModule="proxyView20160510" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="userAreaView" id="q17-Rp-4z7" customClass="UserAreaViewController" customModule="proxyView20160510" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yg9-HS-aef"/>
                         <viewControllerLayoutGuide type="bottom" id="mfQ-q4-s2B"/>

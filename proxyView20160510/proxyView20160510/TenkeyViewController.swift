@@ -9,7 +9,7 @@
 import UIKit
 //import Cocoa
 
-class ViewController: UIViewController {
+class TenkeyViewController: UIViewController {
 
     //let dateLabel = UILabel()  // 日時表示ラベル
     
@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     
     // 日時フォーマット
     //var dateFormatter: NSDateFormatter{
-        //let formatter = NSDateFormatter()
-        //formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-        //return formatter
-    //}
+    //    let formatter = NSDateFormatter()
+    //    formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+    //    return formatter
+   // }
     
     
     
