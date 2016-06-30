@@ -166,7 +166,7 @@ _SINT write(_SINT fileno,        /* File number */
              for(i = count; i > 0u; i--){
                    c = *buf++;
                    charput(c);
-                   charput_sci1(c);
+                   //charput_sci1(c);
              }
              return count;
        }

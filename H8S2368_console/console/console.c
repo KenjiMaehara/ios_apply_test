@@ -15,7 +15,7 @@
  ** locals
  ** ************************************************************************* **/
 
-//#include <stdarg.h>
+#include <stdarg.h>
 
 char charget(void);
 void charput(char);
@@ -28,7 +28,7 @@ void outc_sci1(char, short);
 void outn_sci1(char, unsigned long, short);
 void mprint_test_sci1(char *fmt, ...);
 
-
+#define C_MAX 12    /* ロングデータを8進数で表示するときの最大けた数 */
 
 
 
@@ -58,12 +58,12 @@ void charput(char OutputChar)
 	CONSOLE_P.SSR.BIT.TDRE = 0;
 }
 
-void charput_sci1(char OutputChar)
+void charput_sci0(char OutputChar)
 {
-	while ((CONSOLE_P_SCI1.SSR.BIT.TDRE) == 0);
-		CONSOLE_P_SCI1.TDR = OutputChar;
+	while ((CONSOLE_P_SCI0.SSR.BIT.TDRE) == 0);
+		CONSOLE_P_SCI0.TDR = OutputChar;
 
-	CONSOLE_P_SCI1.SSR.BIT.TDRE = 0;
+	CONSOLE_P_SCI0.SSR.BIT.TDRE = 0;
 }
 
 
@@ -74,6 +74,9 @@ void PutStr(char *str)
 }
 
 #else
+
+
+
 char charget(void)
 {
 }
@@ -86,7 +89,7 @@ void PutStr(char *str)
 {
 }
 
-
+#endif
 
 
 
@@ -96,11 +99,8 @@ void PutStr(char *str)
  +----------------------------------------------------------------------------*/
 
 
-void mprint_test_sci1(char *fmt, ...)
+void mprint_test_sci0(char *fmt, ...)
 {
-
-#if 1
-
     va_list args;
     char *p;
     unsigned long v;
@@ -109,7 +109,8 @@ void mprint_test_sci1(char *fmt, ...)
 
 
     va_start(args, fmt);
-    for (p = fmt; *p != '\0'; p++) {
+    for (p = fmt; *p != '\0'; p++) 
+    {
         if (*p == '%') {
             p++;
             if ((*p >= '1') && (*p <= '9')) {
@@ -123,59 +124,59 @@ void mprint_test_sci1(char *fmt, ...)
  
             switch (*p) {
             case 's':
-                outs_sci1((char*)v, c);
+                outs_sci0((char*)v, c);
                 break;
             case 'c':
-                outc_sci1((char)v, c);
+                outc_sci0((char)v, c);
                 break;
             case 'd': case 'o': case 'x':
-                outn_sci1(*p, v, c);
+                outn_sci0(*p, v, c);
             }
             if (*p == '\0') goto fin;
         }
-        else if (*p == '\n') {
-#ifdef H8TINY_USB
-            charput_sci1('\r');
-#endif
-            charput_sci1('\n');
+        else if (*p == '\n') 
+        {
+        //#ifdef H8TINY_USB
+            //charput_sci1('\r');
+        //#endif
+            charput_sci0('\n');
         }
         else
-            charput_sci1(*p);
+            charput_sci0(*p);
     }
 fin:
     va_end(args);
-
-#endif
-
 }
- 
+
+
 /*------------------------------------------------------------------------------
  +　文字列を出力する
  +----------------------------------------------------------------------------*/
-static void outs_sci1(char *s, short c)
+static void outs_sci0(char *s, short c)
 {
     char *p;
-    for (p = s; *p != '\0'; p++) {
+    for (p = s; *p != '\0'; p++)
+    {
         if (c-- == 0) return;
         //output(*p);
-        charput_sci1(*p)
+        charput_sci0(*p);
     }
-    while (c-- > 0) charput_sci1(' ');
+    while (c-- > 0) charput_sci0(' ');
 }
  
 /*------------------------------------------------------------------------------
  +　文字を出力する
  +----------------------------------------------------------------------------*/
-static void outc_sci1(char ch, short c)
+static void outc_sci0(char ch, short c)
 {
-    charput_sci1(ch);
-    while (--c > 0) charput_sci1(' ');
+    charput_sci0(ch);
+    while (--c > 0) charput_sci0(' ');
 }
  
 /*------------------------------------------------------------------------------
  +　整数を出力する
  +----------------------------------------------------------------------------*/
-static void outn_sci1(char fm, unsigned long v, short c)
+static void outn_sci0(char fm, unsigned long v, short c)
 {
     char s[C_MAX], *p, z;
     unsigned short b;
@@ -197,9 +198,9 @@ static void outn_sci1(char fm, unsigned long v, short c)
         v /= b;
     } while (v != 0);
  
-    for (; c > 0; c--) charput_sci1(z);
+    for (; c > 0; c--) charput_sci0(z);
  
-    while (p > s) charput_sci1(*--p);
+    while (p > s) charput_sci0(*--p);
 } 
 
 
@@ -208,4 +209,4 @@ static void outn_sci1(char fm, unsigned long v, short c)
 
 
 
-#endif
+//#endif
