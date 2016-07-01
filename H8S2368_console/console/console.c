@@ -106,33 +106,64 @@ void mprint_test_sci0(char *fmt, ...)
     unsigned long v;
     short c;
  
+    //char *vp;
+    //int vi;
+    //char vc;
+    char *vp;
+    int vi;
+    long vl;
+    char vc;
+    bool lf;
 
 
     va_start(args, fmt);
     for (p = fmt; *p != '\0'; p++) 
     {
-        if (*p == '%') {
-            p++;
-            if ((*p >= '1') && (*p <= '9')) {
-                c = *p++ - '0';
-                while ((*p >= '0') && (*p <= '9')) c = c * 10 + (*p++ - '0');
+        if(*p == '%')
+        {
+            lf = false;
+            p++; 
+            if ((*p >= '1') && (*p <= '9'))
+            {
+                c = *p++ - '0'; 
+                while ((*p >= '0') && (*p <= '9')) c = c * 10 + (*p++ - '0'); 
+            } 
+            else if (*p == 'l')
+            {
+                p++;
+                lf = true;
             }
             else
-                c = -1;
- 
-            v = (unsigned long)va_arg(args, long);
- 
-            switch (*p) {
-            case 's':
-                outs_sci0((char*)v, c);
-                break;
-            case 'c':
-                outc_sci0((char)v, c);
-                break;
-            case 'd': case 'o': case 'x':
-                outn_sci0(*p, v, c);
+            {
+                c = -1; 
             }
-            if (*p == '\0') goto fin;
+
+
+            switch (*p)
+            {
+                case 's': 
+                    vp = (char *)va_arg(args, char *); 
+                    outs_sci0(vp, c); 
+                    break; 
+
+            case 'c': 
+                vc = (char)va_arg(args, char); 
+                outc_sci0(vc, c); 
+                break; 
+
+            case 'd': case 'o': case 'x': 
+                if (lf)
+                {
+                    vl = (long)va_arg(args, long); 
+                    outn_sci0(*p, vl, c); 
+                }
+                else
+                {
+                    vi = (int)va_arg(args, int); 
+                    outn_sci0(*p, vi, c); 
+                }
+                break;
+            }
         }
         else if (*p == '\n') 
         {
