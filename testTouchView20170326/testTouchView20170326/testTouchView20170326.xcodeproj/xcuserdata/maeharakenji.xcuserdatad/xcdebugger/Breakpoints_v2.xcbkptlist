@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "proxyView20160510/ViewController.swift"
-            timestampString = "485647936.058347"
+            filePath = "testTouchView20170326/ViewController.swift"
+            timestampString = "512445259.846273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "pushButtonNextPage(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,14 +25,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "proxyView20160510/ViewController.swift"
-            timestampString = "485647936.058347"
+            filePath = "testTouchView20170326/ViewController.swift"
+            timestampString = "512445260.553745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "pushButtonNextPage(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

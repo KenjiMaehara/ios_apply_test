@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--topPage-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="topPage" id="BYZ-38-t0r" customClass="NextViewController" sceneMemberID="viewController">
+                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d2p-Kh-XQW" customClass="NextViewControlle">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                        <state key="normal" title="次へ">
+                            <color key="titleColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="pushButtonNextPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMe-SG-0hd"/>
+                        </connections>
+                    </button>
+                    <connections>
+                        <segue destination="Rcw-Up-vhs" kind="push" identifier="pushView" id="bi8-sn-V2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--NextViewController-->
+        <scene sceneID="cZP-V2-vNs">
+            <objects>
+                <viewController id="Rcw-Up-vhs" userLabel="NextViewController" customClass="NextViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kks-LF-CB8"/>
+                        <viewControllerLayoutGuide type="bottom" id="lWf-L6-Wp3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="next" id="ckX-h9-YKN" customClass="NextViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P1M-ZC-hzd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Guy-eW-fF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="-225"/>
+        </scene>
+    </scenes>
+</document>

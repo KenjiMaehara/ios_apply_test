@@ -19,8 +19,8 @@ class UserAreaViewController: UIViewController {
     
     
     // 日時フォーマット
-    var dateFormatter: NSDateFormatter{
-        let formatter = NSDateFormatter()
+    var dateFormatter: DateFormatter{
+        let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
         return formatter
     }
@@ -49,7 +49,7 @@ class UserAreaViewController: UIViewController {
         
         
         // 一定間隔で実行
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateDateLabel", userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(UserAreaViewController.updateDateLabel), userInfo: nil, repeats: true)
         
     
     }
@@ -72,9 +72,9 @@ class UserAreaViewController: UIViewController {
         
         
         
-        let now = NSDate()
+        let now = Date()
         //dateLabel.text = dateFormatter.stringFromDate(now)
-        tokeiLabel.text = dateFormatter.stringFromDate(now)
+        tokeiLabel.text = dateFormatter.string(from: now)
         
         //self.tokeiLabel.text = dateFormatter.stringFromDate(now)
  

@@ -1,15 +1,15 @@
 //
-//  proxyView20160510Tests.swift
-//  proxyView20160510Tests
+//  testTouchView20170326Tests.swift
+//  testTouchView20170326Tests
 //
-//  Created by 前原健二 on 2016/05/10.
-//  Copyright © 2016年 前原健二. All rights reserved.
+//  Created by 前原健二 on 2017/03/26.
+//  Copyright © 2017年 前原健二. All rights reserved.
 //
 
 import XCTest
-@testable import proxyView20160510
+@testable import testTouchView20170326
 
-class proxyView20160510Tests: XCTestCase {
+class testTouchView20170326Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

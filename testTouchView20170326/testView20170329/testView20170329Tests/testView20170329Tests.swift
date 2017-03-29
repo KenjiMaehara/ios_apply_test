@@ -1,15 +1,15 @@
 //
-//  proxyView20160510Tests.swift
-//  proxyView20160510Tests
+//  testView20170329Tests.swift
+//  testView20170329Tests
 //
-//  Created by 前原健二 on 2016/05/10.
-//  Copyright © 2016年 前原健二. All rights reserved.
+//  Created by 前原健二 on 2017/03/29.
+//  Copyright © 2017年 前原健二. All rights reserved.
 //
 
 import XCTest
-@testable import proxyView20160510
+@testable import testView20170329
 
-class proxyView20160510Tests: XCTestCase {
+class testView20170329Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

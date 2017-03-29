@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--openingView-->
@@ -15,17 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" colorLabel="IBBuiltInLabel-Gray">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="カードをタッチしてください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBW-pj-4hZ">
                                 <rect key="frame" x="103" y="455" width="395" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZH-GQ-iqv">
                                 <rect key="frame" x="400" y="530" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="カードタッチ後の画面"/>
                                 <connections>
                                     <segue destination="bBr-ba-aQ7" kind="show" id="wbF-DZ-v2p"/>
@@ -33,13 +38,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skk-KJ-JIW">
                                 <rect key="frame" x="0.0" y="-33" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="img_iccard.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hh7-47-U0c">
                                 <rect key="frame" x="-9" y="-33" width="632" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rBW-pj-4hZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="Ujg-IV-7DL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rBW-pj-4hZ" secondAttribute="bottom" constant="78" id="i27-YN-9OJ"/>
@@ -49,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="466" y="485"/>
+            <point key="canvasLocation" x="-238" y="469"/>
         </scene>
         <!--tenkeyView-->
         <scene sceneID="VsB-QN-XT7">
@@ -60,7 +67,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Jcn-gn-XyY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qHG-mq-iww">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Y-EF-Kpf">
@@ -79,239 +86,239 @@
                             </button>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8If-zb-dUQ">
                                 <rect key="frame" x="32" y="66" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="SMj-kz-Bzg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mHU-Y4-Sbe">
                                 <rect key="frame" x="172" y="167" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="hVa-Kw-ZPn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="j75-7j-e0x">
                                 <rect key="frame" x="32" y="267" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="R5H-7M-nQQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="B9z-dQ-GAm">
                                 <rect key="frame" x="314" y="267" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Nds-xQ-e4w"/>
                                     <constraint firstAttribute="height" constant="120" id="zyj-ka-jff"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bfw-jC-KeU">
                                 <rect key="frame" x="457" y="366" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="♪">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4mM-l2-Hck">
                                 <rect key="frame" x="457" y="167" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Y57-a2-t2S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="C">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Npc-nW-sTx">
                                 <rect key="frame" x="172" y="66" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="iTd-Ve-6mK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tNy-CF-nev">
                                 <rect key="frame" x="457" y="66" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="HQL-Uq-myG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="A">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vQd-cV-etV">
                                 <rect key="frame" x="32" y="167" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="ICg-h1-fQF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-tH-7AF">
                                 <rect key="frame" x="314" y="66" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="s0i-dp-mco"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tjS-e0-MeF">
                                 <rect key="frame" x="172" y="267" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Nmp-ge-fSr"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="ePj-q9-6dZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Huf-Oi-pfo">
                                 <rect key="frame" x="32" y="366" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="OjG-dL-F6i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="✳︎">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ksJ-rp-EGE">
                                 <rect key="frame" x="314" y="366" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="♯">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5Jm-oN-YrN">
                                 <rect key="frame" x="457" y="267" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="5FE-ub-7Fh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="M">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MMy-gE-6qU">
                                 <rect key="frame" x="314" y="167" width="123" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="vnK-Sb-7sP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.85000002384185791" contentMode="topRight" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KUX-tG-bMx">
                                 <rect key="frame" x="172" y="366" width="123" height="85"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.84999999999999998" width="0.25" height="1"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0012326068070000001" green="0.5698587437" blue="0.1271850584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <size key="titleShadowOffset" width="13" height="46"/>
                                 <state key="normal" title="0">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tNy-CF-nev" firstAttribute="top" secondItem="qHG-mq-iww" secondAttribute="top" constant="66" id="1gs-09-BZo"/>
                             <constraint firstItem="vQd-cV-etV" firstAttribute="width" secondItem="MMy-gE-6qU" secondAttribute="width" id="2fx-ny-neA"/>
@@ -389,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imu-uR-iPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="485"/>
+            <point key="canvasLocation" x="742" y="409"/>
         </scene>
         <!--userAreaView-->
         <scene sceneID="PhX-mB-am4">
@@ -400,47 +407,47 @@
                         <viewControllerLayoutGuide type="bottom" id="mfQ-q4-s2B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dU9-1H-znE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Oq-rs-WbU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Oq-rs-WbU">
                                 <rect key="frame" x="40" y="47" width="224" height="218"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="218" id="9HS-Bx-ccR"/>
                                     <constraint firstAttribute="width" constant="224" id="EwR-qp-ZnN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="防犯モード中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMD-59-tt0">
                                 <rect key="frame" x="293" y="220" width="192" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYL-W5-th4">
                                 <rect key="frame" x="0.0" y="421" width="279" height="30"/>
-                                <color key="backgroundColor" red="0.0012326068066183002" green="0.56985874368686873" blue="0.12718505844828423" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0012326068066183002" green="0.56985874368686873" blue="0.12718505844828423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VJz-g5-dSt"/>
                                 </constraints>
                                 <state key="normal" title="防犯開始">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDC-Y4-g0S">
                                 <rect key="frame" x="336" y="421" width="264" height="30"/>
-                                <color key="backgroundColor" red="0.73755129419191912" green="0.73755129419191912" blue="0.73755129419191912" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.73755129419191912" green="0.73755129419191912" blue="0.73755129419191912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jtx-iP-fNI"/>
                                 </constraints>
                                 <state key="normal" title="解除">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="set.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="amH-mj-E9e">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="set.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="amH-mj-E9e">
                                 <rect key="frame" x="112" y="343" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="BVG-AI-yYV"/>
@@ -456,16 +463,18 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRZ-Bu-NM8">
                                 <rect key="frame" x="319" y="130" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMW-IO-A38">
                                 <rect key="frame" x="293" y="173" width="255" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hDC-Y4-g0S" firstAttribute="top" secondItem="dU9-1H-znE" secondAttribute="topMargin" constant="421" id="FG9-zc-kzk"/>
                             <constraint firstItem="hDC-Y4-g0S" firstAttribute="top" secondItem="Z91-Lq-OnP" secondAttribute="bottom" constant="3" id="LYU-hM-bwh"/>
